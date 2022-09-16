@@ -1,0 +1,93 @@
+data/RAMS_1.0/data/test_head.jsonlines
+,place,giver,recipient,artifact,origin,communicator,beneficiary,participant,attacker,transporter,employee,passenger,spy,target,voter,governmentbody,extraditer,ballot,victim,destination
+place,81,12,0,0,0,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0
+giver,25,50,0,0,0,0,25,0,0,0,0,0,0,0,0,0,0,0,0,0
+recipient,0,25,25,0,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+artifact,0,0,0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+origin,0,0,0,0,33,0,0,0,0,0,0,0,0,0,0,0,0,0,0,66
+communicator,0,0,33,0,0,66,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+beneficiary,33,0,0,0,0,0,66,0,0,0,0,0,0,0,0,0,0,0,0,0
+participant,0,0,0,0,0,0,33,66,0,0,0,0,0,0,0,0,0,0,0,0
+attacker,0,0,0,0,0,0,0,0,50,0,0,0,0,50,0,0,0,0,0,0
+transporter,0,0,0,0,0,0,0,0,0,50,0,0,0,0,0,0,0,0,0,0
+employee,0,0,0,0,0,0,0,0,0,0,100,0,0,0,0,0,0,0,0,0
+passenger,0,0,0,0,0,0,0,0,0,0,0,100,0,0,0,0,0,0,0,0
+spy,0,0,0,0,0,0,100,0,0,0,0,0,0,0,0,0,0,0,0,0
+target,0,0,0,0,0,0,0,0,0,0,0,0,0,100,0,0,0,0,0,0
+voter,0,0,0,0,0,0,0,0,0,0,0,0,0,0,100,0,0,0,0,0
+governmentbody,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,100,0,0,0,0
+extraditer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,100,0,0,0
+ballot,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,100,0,0
+victim,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,100,0
+destination,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,100
+ROLE                    CORRECT     MISSING     OVERPRED    F1
+place                   13          304         25          7.32
+recipient               1           180         8           1.05
+participant             2           146         12          2.47
+communicator            2           122         17          2.80
+artifact                3           115         1           4.92
+giver                   2           90          5           4.04
+victim                  1           82          6           2.22
+transporter             1           77          1           2.50
+beneficiary             2           66          14          4.76
+origin                  1           65          2           2.90
+target                  1           64          3           2.90
+destination             1           57          4           3.17
+attacker                1           55          2           3.39
+instrument              0           51          2           0.00
+passenger               1           42          5           4.08
+preventer               0           40          1           0.00
+defendant               0           40          1           0.00
+crime                   0           32          0           0.00
+injurer                 0           31          1           0.00
+employee                2           24          3           12.90
+money                   0           21          1           0.00
+placeofemployment       0           21          2           0.00
+killer                  0           21          0           0.00
+vehicle                 0           20          2           0.00
+detainee                0           16          0           0.00
+inspectedentity         0           14          0           0.00
+prosecutor              0           12          2           0.00
+manufacturer            0           11          0           0.00
+inspector               0           10          1           0.00
+law                     0           10          0           0.00
+judgecourt              0           9           6           0.00
+observedentity          0           9           0           0.00
+spy                     0           9           0           0.00
+governmentbody          1           8           2           16.67
+deceased                0           9           0           0.00
+jailer                  0           8           0           0.00
+damager                 0           8           3           0.00
+investigator            0           7           0           0.00
+candidate               0           7           2           0.00
+damagerdestroyer        0           6           0           0.00
+demonstrator            0           5           0           0.00
+executioner             0           5           0           0.00
+extraditer              1           4           0           33.33
+gpe                     0           5           0           0.00
+founder                 0           5           1           0.00
+destroyer               0           4           1           0.00
+observer                0           4           1           0.00
+driverpassenger         0           4           0           0.00
+artifactmoney           0           3           0           0.00
+granter                 0           3           0           0.00
+territoryorfacility     0           3           0           0.00
+crashobject             0           3           0           0.00
+yielder                 0           3           0           0.00
+hidingplace             0           3           0           0.00
+voter                   1           2           1           40.00
+rejecternullifier       0           2           0           0.00
+retreater               0           2           0           0.00
+surrenderer             0           2           0           0.00
+otherparticipant        0           1           0           0.00
+violator                0           1           0           0.00
+fireexplosionobject     0           1           0           0.00
+ballot                  1           0           0           100.00
+result                  0           1           0           0.00
+TOTAL:                  38          1985        138         3.46
+ -2 & 15 & 2.4 & 13.3 & 4.0 \\ [p r f1 84 gold/15 pred. ]
+ -1 & 19 & 0.6 & 5.3 & 1.1 \\ [p r f1 157 gold/19 pred. ]
+ 0 & 100 & 2.0 & 34.0 & 3.8 \\ [p r f1 1667 gold/100 pred. ]
+ 1 & 23 & 1.1 & 4.3 & 1.8 \\ [p r f1 88 gold/23 pred. ]
+ 2 & 19 & 0.0 & 0.0 & 0.0 \\ [p r f1 27 gold/19 pred. ]
+Precision: 1.8784 Recall: 21.5909 F1: 3.4561
